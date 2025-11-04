@@ -1,0 +1,15 @@
+
+
+.navbar {
+
+    .underline {
+        height: 1px;
+        width: 0%;
+        background-color: #fff;
+    }
+    &:hover {
+        .underline {
+            width: 100%;
+        }
+    }
+}
