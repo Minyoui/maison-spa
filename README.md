@@ -1,4 +1,4 @@
-# Maison`D Main Website (MERN Stack)
+# Maison`D Main Website (MENN Stack)
 
 ## A modern standard spa website that allows customers or clients from a local spa business book an online appointment. 
 
