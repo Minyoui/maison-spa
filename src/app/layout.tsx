@@ -6,9 +6,9 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 
 const nunito = Nunito({
-  variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["400", "600", "700"],
+  display: "swap",
 });
 
 const geistSans = Geist({
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nunito.className} antialiased`}
       >
         <Navbar />
         {children}
