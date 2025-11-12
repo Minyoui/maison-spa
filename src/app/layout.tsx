@@ -4,7 +4,6 @@ import "./globals.css";
 
 // Components
 import Navbar from "@/components/Navbar";
-import Brochure from "@/components/Brochure";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -38,7 +37,6 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} antialiased`}
       >
         <Navbar />
-        <Brochure />
         {children}
       </body>
     </html>
