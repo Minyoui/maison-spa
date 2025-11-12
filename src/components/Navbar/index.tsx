@@ -29,16 +29,16 @@ const Navbar = () => {
                     />
                 </Link>
                 <motion.ul 
-                    className="flex gap-[100px] text-sm"
+                    className="flex space-x-2 text-xs h-full w-[500px] justify-center items-center p-1"
                     initial={{ opacity: 0, display: "none" }}
                     animate={{ opacity: 1, display: "flex" }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: 1 }}
                 >
-                    <li><Link href="/">HOME</Link></li>
-                    <li><Link href="/">ABOUT</Link></li>
-                    <li><Link href="/">FAQs</Link></li>
-                    <li><Link href="/">CONTACT</Link></li>
+                    <li className="h-full w-full"><Link href="/" className="hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-300 h-full w-full rounded-lg px-4 items-center flex justify-center">HOME</Link></li>
+                    <li className="h-full w-full"><Link href="/" className="hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-300 h-full w-full rounded-lg px-4 items-center flex justify-center">ABOUT</Link></li>
+                    <li className="h-full w-full"><Link href="/" className="hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-300 h-full w-full rounded-lg px-4 items-center flex justify-center">FAQs</Link></li>
+                    <li className="h-full w-full"><Link href="/" className="hover:bg-[rgba(255,255,255,0.1)] transition-colors duration-300 h-full w-full rounded-lg px-4 items-center flex justify-center">CONTACT</Link></li>
                 </motion.ul>
                 <Button
                     className="bg-[#B08CCE] h-[50px] w-[150px] rounded-[100px] text-sm mr-1 hover:bg-[#4A2574] transition-colors duration-300"

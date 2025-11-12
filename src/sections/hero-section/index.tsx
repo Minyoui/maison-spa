@@ -25,7 +25,7 @@ const Hero = () => {
             </motion.div>
             <motion.button 
                 type="button"
-                className="cursor-pointer bg-[rgba(255,255,255,0.2)] backdrop-blur py-4 px-10 rounded-[100px] text-sm border border-solid-white hover:bg-[#4A2574] transition-colors duration-300"
+                className="cursor-pointer overflow-hidden bg-[rgba(255,255,255,0.2)] backdrop-blur px-8 py-4 rounded-lg text-center text-sm border border-solid-white border-opacity-10 hover:bg-[#4A2574] transition-colors duration-300"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
