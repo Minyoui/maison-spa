@@ -14,9 +14,9 @@ const Navbar = () => {
     return (
         <header className="fixed flex w-full z-50 items-center justify-center p-4">
             <motion.nav 
-                className="navbar flex flex-row items-center gap-5 bg-[rgba(36,25,47,0.7)] backdrop-blur rounded-[100px] w-full justify-between h-[60px]"
-                initial={{ opacity: 0, width: "0%" }}
-                animate={{ opacity: 1, width: "100%" }}
+                className="navbar flex flex-row items-center gap-5 bg-[rgba(36,25,47,0.7)] backdrop-blur rounded-[100px] max-w-[800px] justify-between h-[60px]"
+                initial={{ opacity: 0, width: "0px" }}
+                animate={{ opacity: 1, width: "800px" }}
                 viewport={{ once: true }}
                 transition={{ duration: 1 }}
             >

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito } from "next/font/google";
+import { Geist, Geist_Mono, Nunito, Antic_Didone, Carattere } from "next/font/google";
 import "./globals.css";
 
 // Components
@@ -9,6 +9,20 @@ const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   weight: ["400", "600", "700"],
+  display: "swap",
+});
+
+const anticDidone = Antic_Didone({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-antic-didone",
+  display: "swap",
+});
+
+const carattere = Carattere({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-carattere",
   display: "swap",
 });
 
@@ -35,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${anticDidone.variable} ${carattere.variable} antialiased`}
       >
         <Navbar />
         {children}
