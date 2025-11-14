@@ -12,7 +12,7 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ className }) => {
     return (
-        <div className="h-screen w-full p-5">
+        <div className={`${className}`}>
             <div className="hero-background relative h-full w-full flex flex-row rounded-[25px] items-end justify-between p-10">
                 <h1 className="text-white font-semibold text-[3.5rem] max-w-[500px]" style={{ fontFamily: "var(--font-manrope)"}}>
                     Experience Calm, Curated with 

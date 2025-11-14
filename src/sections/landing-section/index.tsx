@@ -10,10 +10,10 @@ interface LandingProps {
 
 const Landing: React.FC<LandingProps> = ({ className }) => {
     return (
-        <>
-            <Hero />
-            <SubHero />
-        </>
+        <div className={`${className}`}>
+            <Hero className="h-screen w-full p-5"/>
+            <SubHero className="h-[50dvh] w-full p-10"/>
+        </div>
     );
 };
 
