@@ -51,7 +51,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${anticDidone.variable} ${carattere.variable} antialiased`}
       >
-        <Navbar />
         {children}
       </body>
     </html>

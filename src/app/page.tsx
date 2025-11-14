@@ -1,12 +1,10 @@
 // Sections
-import Hero from "@/sections/hero-section";
-import About from "@/sections/about-section";
+import Landing from "@/sections/landing-section";
 
 export default function Home() {
   return (
     <main>
-        <Hero />
-        <About />
+        <Landing />
     </main>
   );
 }
