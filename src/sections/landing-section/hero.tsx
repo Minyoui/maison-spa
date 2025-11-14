@@ -16,7 +16,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
             <div className="hero-background relative h-full w-full flex flex-row rounded-[25px] items-end justify-between p-10">
                 <h1 className="text-white font-semibold text-[3.5rem] max-w-[500px]" style={{ fontFamily: "var(--font-manrope)"}}>
                     Experience Calm, Curated with 
-                    <span className="" style={{ fontFamily: "var(--font-averia-serif-libre", fontStyle: "italic"}}> Luxurious </span> 
+                    <span className="" style={{ fontFamily:"var(--font-averia-serif-libre)", fontStyle:"italic"}}> Luxurious </span> 
                     Care
                 </h1>
                 <div className="max-w-[250px] flex flex-col items-center gap-[30px]">
