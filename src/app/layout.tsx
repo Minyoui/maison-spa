@@ -1,28 +1,28 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito, Antic_Didone, Carattere } from "next/font/google";
+import { Geist, Geist_Mono, Nunito, Manrope, Averia_Serif_Libre } from "next/font/google";
 import "./globals.css";
 
 // Components
 import Navbar from "@/components/Navbar";
 
+const manrope = Manrope({
+  subsets: ["latin"],
+  variable: "--font-manrope",
+  weight: ["400", "600", "800"],
+  display: "swap",
+})
+
+const averiaSerifLibre = Averia_Serif_Libre({
+  subsets: ["latin"],
+  variable: "--font-averia-serif-libre",
+  weight: "400",
+  display: "swap",
+})
+
 const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   weight: ["400", "600", "700"],
-  display: "swap",
-});
-
-const anticDidone = Antic_Didone({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-antic-didone",
-  display: "swap",
-});
-
-const carattere = Carattere({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-carattere",
   display: "swap",
 });
 
@@ -49,7 +49,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nunito.variable} ${anticDidone.variable} ${carattere.variable} antialiased`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          ${nunito.variable} 
+          ${manrope.variable}
+          ${averiaSerifLibre.variable}
+          antialiased`}
       >
         {children}
       </body>
