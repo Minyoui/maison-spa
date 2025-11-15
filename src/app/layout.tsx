@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Nunito, Manrope, Averia_Serif_Libre } from "next/font/google";
+import { Geist, Geist_Mono, Nunito, Manrope, Averia_Serif_Libre, Carattere } from "next/font/google";
 import "./globals.css";
 
 // Components
@@ -9,6 +9,13 @@ const manrope = Manrope({
   subsets: ["latin"],
   variable: "--font-manrope",
   weight: ["400", "600", "800"],
+  display: "swap",
+})
+
+const carattere = Carattere({
+  subsets: ["latin"],
+  variable: "--font-carattere",
+  weight: "400",
   display: "swap",
 })
 
@@ -55,6 +62,7 @@ export default function RootLayout({
           ${nunito.variable} 
           ${manrope.variable}
           ${averiaSerifLibre.variable}
+          ${carattere.variable}
           antialiased`}
       >
         {children}
