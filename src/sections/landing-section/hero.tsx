@@ -20,7 +20,7 @@ const Hero: React.FC<HeroProps> = ({ className }) => {
                     Care
                 </h1>
                 <div className="max-w-[250px] flex flex-col items-center gap-[30px]">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <Button className="bg-white text-black w-full p-3 rounded-[100px]">Book Appointment</Button>
                 </div>
             </div>
