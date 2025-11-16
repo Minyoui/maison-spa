@@ -9,7 +9,7 @@ interface testimonialProps {
 
 const Testimonial: React.FC<testimonialProps> = ({ className }) => {
     return (
-        <div className={`h-screen w-full bg-white flex flex-col p-10 ${className}`}>
+        <div className={`bg-white flex flex-col p-10 ${className}`}>
             <h1 className="text-[3rem] font-semibold" style={{ fontFamily:"var(--font-manrope)"}}>
                 Our Client 
                 <span className="text-[4rem] font-normal" style={{ fontFamily:"var(--font-carattere)"}}> Testimonial</span>
